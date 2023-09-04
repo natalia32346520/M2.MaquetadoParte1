@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cervecería Goldaratz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/cerveceria.css" </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark"">
+        <div class=" container-fluid">
+    <a class="navbar-brand" href="#">Cervecería Goldaratz</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Novedades
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Contactenos</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div id="home" class="row align-items-center hero">
+  <div class="col-3 offset-lg-2">
+        <p>¡Buena Comida, buena Birra, buenos Amigos!</p>
+        <h1>CERVECERÍA GOLDARATZ</h1>
+        <p>DESCUBRÍ LA GOLDARATZ PERFECTA PARA VOS.</p>
+      </div>
+    </div>
+  <div class="row my-3">
+      <div id="Novedades" class="col-md-4 offset-md-2 py-3">
+        <h2>Novedades</h2>
+        <ul class="Lista novedades">
+          <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/novedades01.jpg">
+              DORAPA</a></li>
+          <li><a href="#"> <img src="img/novedades01.jpg"> HEADSHOT </a></li>
+          <li><a href="#"> <img src="img/novedades01.jpg"> VIOLENTA</a></li>
+          <li><a href="#"> <img src="img/novedades01.jpg"> ARRAYANES </a></li>
+        </ul>
+      </div><!--cierre novedades-->
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- Fin Modal -->
+  
+  <div class="col-md-3 my-3">
+    <div class="rounded py-5 Testimonios">
+      <h2 class="text-center">Testimonios</h2>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonios">
+              <h5>"La mejor birra del mundo"</h5>
+              <p>Manuel, Quilmes.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonios">
+              <h5>"Excelente ambiente y calidad de la cerveza"</h5>
+              <p>Pablo, Berazategui.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonios">
+              <h5>"Increíble fábrica de cerveza y bar. Todo en uno.¡Geniosss!"</h5>
+              <p>Marianela, CABA.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div><!--cierra los testimonios-->
+  </div><!--cierra la fila-->
+  
+
+
+  </div><!--cierra div con id novedades-->
+
+  <footer>
+    <p class="text-center"> Diseñado por: Natalia Salas</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://getbootstrap.com/docs/5.3/components/modal/"></script>
+  <script src="https://getbootstrap.com/docs/5.3/components/carousel/"></script>
+</body>
+
+</html>
